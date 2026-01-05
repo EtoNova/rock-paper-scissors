@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    font-family: "Courier New", Courier, monospace;
+    color: #dad2d8;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    height: 100vh;
+    gap: 20px; 
+}
+
+h1, h2 {
+    text-align: center;  
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#player-score, #comp-score  {
+    text-align: center;
+    font-size: 30px;
+    border-color: #ff9500;
+    border-width: 10px;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-style: inset;
+    padding: 10px 30px;
+    padding-top: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.num {
+    font-size: 40px;
+    margin: 0;
+}
+
+.buttons {
+    display: flex; 
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px; 
+}
+
+button {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    width: 180px; 
+    height: 100px;
+    padding: 5px;
+    border-width: 10px;
+    border-style: outset;
+    border-color: #0dc6c9;
+    background-color: #0cecf0;
+    color: black;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #17b7b9;
+}
+
+.result-text {
+    font-size: 40px;
+    text-align: center;
+}

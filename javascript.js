@@ -50,20 +50,21 @@ function playRound(humanChoice, computerChoice){
 
 const clickHandler = (e) => {
     const result = document.querySelector(".result-text");
-    const playerScoreText = document.querySelector("#player-score"); 
-    const compScoreText = document.querySelector("#comp-score");
+    const playerScoreText = document.querySelector("#player-score .num"); 
+    const compScoreText = document.querySelector("#comp-score .num");
 
     result.innerHTML = playRound(e.target.id, getComputerChoice());
 
-    playerScoreText.textContent = "Player Score: " +  humanScore;
-    compScoreText.textContent = "Computer Score: " +  computerScore;
+    playerScoreText.textContent = humanScore;
+    compScoreText.textContent = computerScore;
 
     if (humanScore === 5 || computerScore === 5) {
         buttons.removeEventListener("click", clickHandler); 
         if(humanScore === 5)
-            result.innerHTML = "Winner: <strong>Player</strong>!"
+            result.innerHTML = "WINNER: <strong>Player</strong>!";
         else 
-            result.innerHTML = "Winner: <strong>Computer</strong>!"
+            result.innerHTML = "WINNER: <strong>Computer</strong>!";
+        result.style.fontSize = "50px";
     }
 };
 
